@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "nombre": "Suculenta Echeveria",
+        "descripcion": "Planta pequeña y resistente, ideal para interiores y terrazas. Requiere poca agua y mucha luz.",
+        "precio": 15.5,
+        "imagen": "/images/suculenta.jpg",
+        "categoria": "Suculentas"
+    },
+    {
+        "id": "2",
+        "nombre": "Helecho Boston",
+        "descripcion": "Planta de hojas largas y frondosas, perfecta para ambientes húmedos y con sombra.",
+        "precio": 28.0,
+        "imagen": "/images/helecho.jpg",
+        "categoria": "Plantas de Interior"
+    },
+    {
+        "id": "3",
+        "nombre": "Rosa Roja",
+        "descripcion": "Rosa clásica de pétalos rojos intensos. Ideal para jardines o macetas grandes, requiere sol y riego regular.",
+        "precio": 35.9,
+        "imagen": "/images/rosaroja.jpg",
+        "categoria": "Flores"
+    }
+]
