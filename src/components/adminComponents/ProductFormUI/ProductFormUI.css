@@ -1,0 +1,19 @@
+.product-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-form input,
+.product-form select,
+.product-form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
