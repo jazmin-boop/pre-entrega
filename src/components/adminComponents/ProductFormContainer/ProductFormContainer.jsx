@@ -3,16 +3,16 @@ import { ProductFormUI } from "../ProductFormUI/ProductFormUI";
 import { validateProduct } from "../../../utils/validateProducts";
 import { uploadToImgbb } from "../../../services/uploadImage";
 import { createProduct } from "../../../services/product";
-import { useNavigate } from "react-router-dom";   
+import { useNavigate } from "react-router-dom";
 
-import "../ProductFormContainer/ProductFormContainer.css";
+import "./ProductFormContainer.css";
 
 export const ProductFormContainer = () => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
   const [file, setFile] = useState(null);
 
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   const [product, setProduct] = useState({
     nombre: "",
@@ -51,8 +51,7 @@ export const ProductFormContainer = () => {
 
       alert("Producto cargado con éxito");
 
-     
-      navigate("/");   
+      navigate("/");
 
       setProduct({
         nombre: "",
@@ -60,6 +59,7 @@ export const ProductFormContainer = () => {
         categoria: "",
         descripcion: "",
       });
+
       setFile(null);
     } catch (error) {
       setErrors({ general: error.message });
@@ -69,13 +69,15 @@ export const ProductFormContainer = () => {
   };
 
   return (
-    <ProductFormUI
-      product={product}
-      errors={errors}
-      onChange={handleChange}
-      onFileChange={setFile}
-      loading={loading}
-      onSubmit={handleSubmit}
-    />
+    <div className="product-form-container">
+      <ProductFormUI
+        product={product}
+        errors={errors}
+        onChange={handleChange}
+        onFileChange={setFile}
+        loading={loading}
+        onSubmit={handleSubmit}
+      />
+    </div>
   );
 };

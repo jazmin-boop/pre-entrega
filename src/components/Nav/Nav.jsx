@@ -14,7 +14,7 @@ export const Nav = () => {
                 <Link to={"/category/Suculentas"}>Suculentas</Link>
             </li>
             <li>
-                <Link to={"/category/Plantas-de-Interior"}>Plantas de Interior</Link>
+                <Link to={"/category/Plantas de interior"}>Plantas de interior</Link>
             </li>
             <li>
                 <Link to={"/category/Flores"}>Flores</Link>
